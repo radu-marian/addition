@@ -1,0 +1,13 @@
+name: syntax
+on: push
+jobs:
+  task1:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-python@3.7
+      with:
+        python-version: 3.7
+      - run: echo Testat de Macovei Radu, 311AC
+      - run: gcc adunare.c -o adunare
+      - run: adunare
